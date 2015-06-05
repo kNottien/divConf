@@ -1,0 +1,14 @@
+#!/bin/bash
+
+## copy files to ~/
+cp bashrc_add ~/.bashrc_add
+cp emacs ~/.emacs
+cp gitignore_global ~/.gitignore_global
+
+## setup git
+git config --global core.excludesfile ~/.gitignore_global
+git config --global user.name "kNottien"
+git config --global user.email "kentarveolsen@gmail.com"
+
+## add script to .bashrc
+printf "\n## added user config\n. .bashrc_add\n" >> ~/.bashrc

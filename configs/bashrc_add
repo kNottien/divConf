@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## Command aliases
+alias em='emacs -nw -Q'
+alias emx='emacs -Q -ib 5'
+
+## Remap caps to ctrl
+setxkbmap -option ctrl:nocaps
