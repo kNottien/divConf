@@ -9,6 +9,7 @@ cp gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 git config --global user.name "kNottien"
 git config --global user.email "kentarveolsen@gmail.com"
+git config --global core.editor em
 
 ## add script to .bashrc
-printf "\n## added user config\n. .bashrc_add\n" >> ~/.bashrc
+printf "\n## kNottien config\n. .bashrc_add\n" >> ~/.bashrc

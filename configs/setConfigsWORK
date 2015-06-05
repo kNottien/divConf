@@ -1,13 +1,7 @@
 #!/bin/bash
 
-##copy files to ~/
-cp bashrc_add ~/.bashrc_add
-cp emacs_tty ~/.emacs_tty
-cp emacs_x ~/.emacs_x
-cp gitignore_global ~/.gitignore_global
+. ./setConfigs
 
 ##setup git
-git config --global core.excludesfile ~/.gitignore_global
 git config --global user.name "Kent Arve Olsen"
 git config --global user.email kao@rds.no
-git config --global core.editor em
