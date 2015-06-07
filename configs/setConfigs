@@ -6,10 +6,14 @@ cp emacs ~/.emacs
 cp gitignore_global ~/.gitignore_global
 
 ## setup git
+read -p "Enter GIT global username : " username
+read -p "Enter GIT global email    : " email
+printf "Using $username/$email\n"
+
 git config --global core.excludesfile ~/.gitignore_global
-git config --global user.name "kNottien"
-git config --global user.email "kentarveolsen@gmail.com"
+git config --global user.name "$username"
+git config --global user.email "$email"
 git config --global core.editor em
 
 ## add script to .bashrc
-printf "\n## kNottien config\n. .bashrc_add\n" >> ~/.bashrc
+printf "\n## $username config\n. .bashrc_add\n" >> ~/.bashrc

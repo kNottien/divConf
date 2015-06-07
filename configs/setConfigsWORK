@@ -1,7 +1,0 @@
-#!/bin/bash
-
-. ./setConfigs
-
-##setup git
-git config --global user.name "Kent Arve Olsen"
-git config --global user.email kao@rds.no
